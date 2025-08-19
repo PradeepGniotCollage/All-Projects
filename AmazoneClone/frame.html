@@ -1,0 +1,22 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Frames Webpage</title>
+</head>
+<frameset rows="50%,50%">
+    <!-- First row divided into two columns -->
+    <frameset cols="50%,50%">
+        <frame src="about:blank" style="background-color: #FF5733;" name="frame1">
+        <frame src="about:blank" style="background-color: #33FF57;" name="frame2">
+    </frameset>
+    <!-- Second row -->
+    <frame src="about:blank" style="background-color: #3357FF;" name="frame3">
+</frameset>
+<noframes>
+    <body>
+        <p>Your browser does not support frames. Please update your browser.</p>
+    </body>
+</noframes>
+</html>
