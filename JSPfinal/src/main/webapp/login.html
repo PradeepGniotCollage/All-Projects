@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RDB ERP - Login</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('rdb1.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.95);
+      max-width: 350px;
+      width: 90%;
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .social-icons {
+      margin-bottom: 15px;
+    }
+
+    .social-icons img {
+      width: 25px;
+      margin: 0 8px;
+      opacity: 0.7;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .social-icons img:hover {
+      opacity: 1;
+    }
+
+    h2 {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 24px;
+      margin: 10px 0 5px;
+    }
+
+    p {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    margin: 10px 0 5px;
+    font-weight: 700;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      margin-bottom: 15px;
+      border-radius: 20px;
+      background-color: #f0f4ff;
+    }
+
+    .btn,
+    .btn1 {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 15px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .btn {
+      background: linear-gradient(to right, #f39c12, #f1c40f);
+    }
+
+    .btn1 {
+      background: linear-gradient(to right, #28a745, #218838);
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #444;
+      margin-top: 10px;
+    }
+
+    .footer a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 400px) {
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .error-message {
+      color: red;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .imge{
+    border-radius: 60px;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100080162846822"><img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png" alt="Facebook"></a>
+      <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter.png" alt="Twitter">
+      <a href="https://www.instagram.com/rdbischool/"><img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png" alt="Instagram"></a>
+      <a href="https://www.youtube.com/@rdbacademy5440"><img src="https://img.icons8.com/ios-glyphs/30/000000/youtube-play.png" alt="YouTube"></a>
+    </div>
+    <img alt="logo" src="logo.png" height="120px" width="120px" class="imge">
+    <p>R.D.B ACADEMY SCHOOL</p>
+
+	<form action="login.jsp" method="post">
+	  <input type="text" name="schoolId" placeholder="School ID" required>
+	  <input type="password" name="password" placeholder="Password" required>
+	  <button type="submit" class="btn">Login</button>
+	</form>
+
+    <a href="register.html" class="btn1">Create New Account</a>
+
+    <div class="footer">
+      Designed & Developed By: Radheshyam Kushwaha <br>
+      For Support and Queries: <br>
+      <b>CampusERP@RdbAcademy.net.in</b>, +91 9369511821 <br>
+      Copyright Â© 2025 <a href="school.html">RDB ACADEMY SCHOOL</a>
+    </div>
+  </div>
+
+</body>
+</html>
